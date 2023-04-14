@@ -73,8 +73,12 @@ body >* {
 
 /* MAIN */
 section {
-    min-height: 490px;
+    /* min-height: 490px; */
     border: solid 1px;
+}
+
+.debug_content {
+    min-height: 490px;
 }
 
 /* FOOTER */
