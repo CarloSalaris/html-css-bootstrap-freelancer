@@ -30,6 +30,22 @@ footer {
     color: #ffffff;
 }
 
+#header-menu.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+
+    #header-menu.hidden {
+        display: flex;
+    }
+
+    #burger {
+        display: none;
+    }
+    
+}
+
 
 /*************************
     STRUCTURE
@@ -50,6 +66,9 @@ footer {
 
 #copyright-footer {
     min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
