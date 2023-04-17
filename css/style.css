@@ -14,8 +14,22 @@ img {
     max-width: 100%;
 }
 
-p {
+p,
+form {
     text-align: left;
+}
+
+form >* {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: solid 1px #cccccc;
+}
+
+::placeholder,
+::-webkit-input-placeholder {
+    color: #2c3e50;
+    opacity: 1;
 }
 /*************************
     UTILITIES
@@ -23,6 +37,10 @@ p {
 
 .bg_green {
     background-color: #1abc9c;
+}
+
+.dark-blue {
+    color: #2c3e50;
 }
 
 header,
@@ -38,11 +56,12 @@ footer {
 
 .button_style {
     background-color: #1abc9c;
-    color: inherit;
+    color: white;
+    width: auto;
     border: solid 1px;
-    border-radius: 5px;
-    padding: 10px;
-    font-weight: 700;
+    border-radius: 7px;
+    padding: 10px 15px;
+    font-weight: 600;
     margin-top: 20px;
 }
 
