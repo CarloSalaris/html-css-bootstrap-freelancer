@@ -170,6 +170,8 @@ footer {
 
         .navbar {
             min-height: 90px;
+            
+            /* This is not a valid option but I couldn't find another way to change the color of the icon */
             --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(136, 136, 136)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
         }
 
