@@ -16,7 +16,8 @@ h3 {
     font-weight: 700;
 }
 
-h4 {
+h4,
+.button_style {
     font-size: 1.2em;
     font-weight: 600;
 
@@ -41,16 +42,16 @@ form {
 }
 
 p,
-#about button,
 ::placeholder,
 address,
-footer span {
-    font-size: 1.25em;
+footer span,
+#social_row {
+    font-size: 1.3em;
 }
 
 form >* {
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     border: none;
     border-bottom: solid 1px #cccccc;
 }
@@ -60,6 +61,24 @@ form >* {
     color: #2c3e50;
     opacity: 1;
 }
+
+        /* FONT-SIZE QUERY MD (min 768px)*/
+        @media all and (min-width: 768px) {
+            h1 {
+                font-size: 4em;
+            }
+            h2 {
+                font-size: 3.2em;
+            }
+            h3 {
+                font-size: 1.4em;
+            }
+            h4 {
+                font-size: 1.6em;
+            }
+        }
+
+
 /*************************
     UTILITIES
  *************************/
@@ -108,8 +127,7 @@ footer {
     border-radius: 50%;
 }
 
-section,
-#media-footer {
+section {
     padding: 50px 0 30px;
 }
 
@@ -196,11 +214,12 @@ section#jumbo {
 /* FOOTER */
 #media-footer {
     background-color: #3a546d;
+    padding: 50px 0;
 }
 
 #social_row {
     width: 270px;
-    margin: auto;
+    margin: 0 auto 20px;
     justify-content: space-between;
 }
 
