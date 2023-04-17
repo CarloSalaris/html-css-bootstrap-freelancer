@@ -83,11 +83,7 @@ form >* {
     UTILITIES
  *************************/
 
-.ms_row {
-    display: flex;
-}
-
-.bg_green {
+ .bg_green {
     background-color: #1abc9c;
 }
 
@@ -118,6 +114,10 @@ footer {
 }
 
 .social_logo {
+    display: flex;
+}
+
+.social_logo a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,9 +220,12 @@ section#jumbo {
 }
 
 #social_row {
+    display: flex;
+    justify-content: space-between;
     width: 270px;
     margin: 0 auto 20px;
-    justify-content: space-between;
+    padding: 0;
+
 }
 
 #media-footer span a {
