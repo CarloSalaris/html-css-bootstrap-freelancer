@@ -35,6 +35,10 @@ form >* {
     UTILITIES
  *************************/
 
+.ms_row {
+    display: flex;
+}
+
 .bg_green {
     background-color: #1abc9c;
 }
@@ -63,6 +67,16 @@ footer {
     padding: 10px 15px;
     font-weight: 600;
     margin-top: 20px;
+}
+
+.social_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
 }
 
 section,
@@ -163,6 +177,16 @@ section#jumbo {
 /* FOOTER */
 #media-footer {
     background-color: #3a546d;
+}
+
+#social_row {
+    width: 280px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#media-footer span a {
+    color: #1abc9c;
 }
 
 #copyright-footer {
