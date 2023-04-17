@@ -14,7 +14,9 @@ img {
     max-width: 100%;
 }
 
-
+p {
+    text-align: left;
+}
 /*************************
     UTILITIES
  *************************/
@@ -34,52 +36,61 @@ footer {
     color: #ffffff;
 }
 
+.button_style {
+    background-color: #1abc9c;
+    color: inherit;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
 section,
 #media-footer {
-    padding: 50px 0;
+    padding: 50px 0 30px;
 }
 
-    /* SECTION QUERY MD (min 768px)*/
-    @media all and (min-width: 768px) {
-        section,
-        #media-footer {
-            padding: 85px 0;
+        /* SECTION QUERY MD (min 768px)*/
+        @media all and (min-width: 768px) {
+            section,
+            #media-footer {
+                padding: 85px 0 60px;
+            }
         }
+
+
+    /* Star divider */
+    .star-divider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        margin: 20px auto;
+        font-size: 30px;
     }
 
-
-/* Star divider */
-.star-divider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    margin: 20px auto;
-    font-size: 30px;
-}
-
-.star-divider.short-divider {
-    width: 125px;
-}
-
-    /* STAR DIVIDER MD (min 768px)*/
-    @media all and (min-width: 768px) {
-        .star-divider {
-            width: 370px;
-        }
-
-        .star-divider.short-divider {
-            width: 255px;
-        }
+    .star-divider.short-divider {
+        width: 125px;
     }
 
+    .star-divider .line-divider {
+        width: 38%;
+        height: 0;
+        border: 2px solid;
+        border-radius: 5px;
+    }
 
-.star-divider .line-divider {
-    width: 38%;
-    height: 0;
-    border: 2px solid;
-    border-radius: 5px;
-}
+            /* STAR DIVIDER MD (min 768px)*/
+            @media all and (min-width: 768px) {
+                .star-divider {
+                    width: 370px;
+                }
+
+                .star-divider.short-divider {
+                    width: 255px;
+                }
+            }
 
 
         /* BS overwrite */
@@ -149,7 +160,7 @@ section#jumbo {
     DEBUG
  *************************/
 
-.container {
+/* .container {
     border: dotted 2px;
 }
 
@@ -159,20 +170,20 @@ section#jumbo {
 
 body >* {
     border: solid 1px blueviolet;
-}
+} */
 
 /* MAIN */
-section {
+/* section {
     border: solid 1px;
 }
 
 .debug_content {
     min-height: 490px;
-}
+} */
 
 /* FOOTER */
-#media-footer {
+/* #media-footer {
     min-height: 230px;
 }
-
+ */
 
