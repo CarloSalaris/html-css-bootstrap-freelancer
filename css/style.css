@@ -30,13 +30,31 @@ footer {
     color: #ffffff;
 }
 
+/* Star divider */
+.star-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    max-width: 370px;
+    margin: 20px auto;
+    font-size: 30px;
+}
+
+.star-divider .line-divider {
+    width: 38%;
+    height: 0;
+    border: 2px solid;
+}
+
+
         /* BS overwrite */
         header .container-fluid * {
             color: inherit;
         }
 
         .navbar {
-            min-height: 95px;
+            min-height: 90px;
         }
 
         .navbar-toggler {
@@ -48,10 +66,31 @@ footer {
     STRUCTURE
  *************************/
 
-header {
-    min-height: 95px;
-
+/* HEADER */
+ header {
+    min-height: 90px;
 }
+
+/* JUMBO */
+section#jumbo {
+    padding: 25px 0;
+}
+
+#jumbo img {
+    width: 250px;
+    margin-bottom: 20px;
+ }
+
+        /* JUMBO RESPONSIVE MD (min 768px)  */
+
+        @media all and (min-width: 768px) {
+            section#jumbo {
+                padding: 65px 0;
+            }
+        }
+
+
+/* MAIN */
 
 /* FOOTER */
 #media-footer {
