@@ -1,7 +1,28 @@
 /*************************
     GENERAL RULES
  *************************/
- a {
+h1 {
+    font-size: 2.3em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -17,6 +38,14 @@ img {
 p,
 form {
     text-align: left;
+}
+
+p,
+#about button,
+::placeholder,
+address,
+footer span {
+    font-size: 1.25em;
 }
 
 form >* {
@@ -98,13 +127,15 @@ section,
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 200px;
+        width: calc(100vw / 3);
+        max-width: 450px;
         margin: 20px auto;
         font-size: 30px;
     }
 
     .star-divider.short-divider {
-        width: 125px;
+        width: calc(100vw / 4);
+        max-width: 380px;
     }
 
     .star-divider .line-divider {
@@ -113,18 +144,6 @@ section,
         border: 2px solid;
         border-radius: 5px;
     }
-
-            /* STAR DIVIDER MD (min 768px)*/
-            @media all and (min-width: 768px) {
-                .star-divider {
-                    width: 370px;
-                }
-
-                .star-divider.short-divider {
-                    width: 255px;
-                }
-            }
-
 
         /* BS overwrite */
         header .container-fluid * {
@@ -180,7 +199,7 @@ section#jumbo {
 }
 
 #social_row {
-    width: 280px;
+    width: 270px;
     margin: auto;
     justify-content: space-between;
 }
@@ -194,6 +213,7 @@ section#jumbo {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: .9em;
 }
 
 
