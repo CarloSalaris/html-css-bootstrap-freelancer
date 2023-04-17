@@ -10,6 +10,10 @@ ul {
     list-style-type: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /*************************
     UTILITIES
@@ -30,21 +34,43 @@ footer {
     color: #ffffff;
 }
 
+section,
+#media-footer {
+    padding: 50px 0;
+}
+
+    /* SECTION QUERY MD (min 768px)*/
+    @media all and (min-width: 768px) {
+        section,
+        #media-footer {
+            padding: 85px 0;
+        }
+    }
+
+
 /* Star divider */
 .star-divider {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-    max-width: 370px;
+    width: 200px;
     margin: 20px auto;
     font-size: 30px;
 }
+
+    /* STAR DIVIDER MD (min 768px)*/
+    @media all and (min-width: 768px) {
+        .star-divider {
+            width: 370px;
+        }
+    }
+
 
 .star-divider .line-divider {
     width: 38%;
     height: 0;
     border: 2px solid;
+    border-radius: 5px;
 }
 
 
@@ -91,6 +117,10 @@ section#jumbo {
 
 
 /* MAIN */
+
+#portfolio img {
+    border-radius: 10px;
+}
 
 /* FOOTER */
 #media-footer {
