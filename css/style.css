@@ -30,33 +30,27 @@ footer {
     color: #ffffff;
 }
 
-#header-menu.hidden {
-    display: none;
-}
+        /* BS overwrite */
+        header .container-fluid * {
+            color: inherit;
+        }
 
-@media screen and (min-width: 992px) {
+        .navbar {
+            min-height: 95px;
+        }
 
-    #header-menu.hidden {
-        display: flex;
-    }
-
-    #burger {
-        display: none;
-    }
-    
-}
+        .navbar-toggler {
+            border: solid 1px #ffffff;
+        }
 
 
 /*************************
     STRUCTURE
  *************************/
 
-.header_content {
-    height: 95px;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    width:max-content;
+header {
+    min-height: 95px;
+
 }
 
 /* FOOTER */
@@ -92,7 +86,6 @@ body >* {
 
 /* MAIN */
 section {
-    /* min-height: 490px; */
     border: solid 1px;
 }
 
